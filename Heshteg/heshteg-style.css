@@ -1,0 +1,18 @@
+@import url(../varabiles.css);
+@import url(../categoriy-bar/category-bar.css);
+@import url(../header/header-style.css);
+@import url(../card/card-style.css);
+@import url(../footer/footer-styles.css);
+
+
+.row{
+    display: flex;
+    position: relative;
+ width: 90%;
+ left: 1%;
+
+}
+
+main h2{
+    margin: 1em 0 1em 30px;
+}

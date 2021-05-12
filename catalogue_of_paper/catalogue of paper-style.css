@@ -1,0 +1,50 @@
+
+
+.catalogue-paper{
+    background: #EBEBEB;
+width: 410px;
+height: 544px;
+border-top: solid  #2680EB 5px;
+
+}
+
+.catalogue-paper-title,.catalogue-paper-text{
+    margin: 1em 0 1em 2em;
+}
+
+.catalogue-paper-text,.paper-text-date{
+    width: 80%;
+}
+
+.paper-text-date{
+    margin: 0 0 0 2em;
+    padding-bottom: 1em;
+    border-bottom: solid  #B3B3B3 1px; 
+}
+
+.allViewBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    top: 88%;
+    width: 126px;
+    height: 41px;
+    background: #2680EB;
+    color: white;
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 768px){
+ 
+    .catalogue-paper{
+        width: 90%;
+        height:523px;
+        padding-bottom: 2em;
+    }
+    .allViewBtn{
+        left: 55%;
+        top: 95%;
+    }
+}

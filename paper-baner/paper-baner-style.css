@@ -1,0 +1,39 @@
+@import url(../varabiles.css);
+
+.paperBaner{
+    width: 850px;
+    height: 544px;
+    background-image: url('https://c.files.bbci.co.uk/4B45/production/_117796291_gettyimages-962098266.jpg');
+    /* background: linear-gradient(72.25deg, #FFFFFF 0%, #EDEDED 100%); */
+}
+
+.categoryBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 53%;
+    left: 5.03%;
+    width: 98.08px;
+    height: 33px;
+    background-color: white;
+    color: var(--main-color);
+}
+
+.paperBaner h3{
+    position: relative;
+    width: 760px;
+    font-size: 22px;
+    font-weight: 700;
+    top: 57%;
+    left: 5.03%; 
+    
+}
+
+.paperBaner p{
+    position: relative;
+ width: 760px;
+ left: 5.03%;
+ top: 60%;
+ font-weight: 300;
+}

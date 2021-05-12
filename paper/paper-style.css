@@ -1,0 +1,73 @@
+@import url(../varabiles.css);
+
+.paper{
+height: 1057px;
+width: 850px;
+background-color: var(--background-color);
+}
+
+.paper-title{
+position: relative;
+width: 90%;
+height: 52.1px;
+font-size: 22px;
+font-weight: 500;
+line-height: 26px;
+left: 5%;
+padding-top: 30.6px;
+}
+
+.paper-text{
+position: relative;
+width:90%;
+height: 221.41px;
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+left: 5%;
+margin-top: 30.6px;
+}
+
+.paper-img{
+    position: relative;
+height: 577px;
+width: 90%;
+left: 5%;
+margin-top: 59.39px;
+}
+
+
+.paper-footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin-top: 30px;
+}
+
+.paper-footer ul{
+    display: flex;
+    align-items: center;
+}
+
+.author-img img{
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.author-name{
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+margin-left: 1em;
+}
+
+.hashtags{
+    margin-right: 1em;
+}
+
+.paper-footer li :hover{
+    color: var(--main-color);
+}

@@ -1,0 +1,28 @@
+@import url(../varabiles.css);
+@import url(../header/header-style.css);
+@import url(../card/card-style.css);
+@import url(../catalogue_of_paper/catalogue\ of\ paper-style.css);
+@import url(../footer/footer-styles.css);
+@import url(../paper-baner/paper-baner-style.css);
+@import url(../categoriy-bar/category-bar.css);
+@import url(../nimadir/nimadir-style.css);
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.row1 .paperBaner{
+    margin-left: 30px;
+}
+
+.row1 .catalogue-paper{
+    margin-right: 30px;
+}

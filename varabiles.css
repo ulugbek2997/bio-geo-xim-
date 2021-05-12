@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family:; */
+}
+
+@import url(./header/header-style.css);
+@import url(./banner/banner-style.css);
+@import url(./card/card-style.css);
+@import url(./banner/banner-style.css);
+@import url(./footer/footer-styles.css);
+
+
+:root {
+    --main-color: #2680EB;
+    --background-color:#EBEBEB;    
+    --pane-margin: 0em 1em 0em 1em;
+  }
+
+  a{
+      color: black;
+  }

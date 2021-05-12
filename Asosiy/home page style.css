@@ -1,0 +1,27 @@
+@import url(../varabiles.css);
+@import url(../header/header-style.css);
+@import url(../banner/banner-style.css);
+@import url(../card/card-style.css);
+@import url(../catalogue_of_paper/catalogue\ of\ paper-style.css);
+@import url(../footer/footer-styles.css);
+
+main{
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.row .catalogue-paper{
+    margin: var(--pane-margin);
+}
+
+@media only screen and (max-width: 768px) {
+    .row{
+        display: block;
+    }
+}

@@ -1,0 +1,14 @@
+@import url(../varabiles.css);
+@import url(../header/header-style.css);
+@import url(../author-card/author-card-style.css);
+@import url(../card/card-style.css);
+@import url(../footer/footer-styles.css);
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+ .author-card{
+    margin: 1em 1em 1em 1em ;
+}

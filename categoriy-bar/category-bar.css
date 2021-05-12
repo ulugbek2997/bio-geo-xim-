@@ -1,0 +1,28 @@
+@import url(../varabiles.css);
+
+
+.catalogueBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 1em 0;
+}
+
+.catalogueBarLeft ul, .catalogueBarright ul{
+    display: flex;
+    align-items: center;
+}
+
+.catalogueBarLeft ul li:first-child{
+    font-size: xx-large;
+    color: var(--main-color);
+    padding: 0 0.1em 0 1em;
+    
+}
+
+.catalogueBarright ul li , .catalogueBarright ul{
+    margin-right: 1em;
+}
+
+
+
