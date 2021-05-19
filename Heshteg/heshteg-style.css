@@ -7,12 +7,25 @@
 
 .row{
     display: flex;
-    position: relative;
- width: 90%;
- left: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 
 }
 
 main h2{
     margin: 1em 0 1em 30px;
+}
+
+@media only screen and (min-width: 1366px){
+    .main-hashteg{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .main-hashteg a{
+        width: 1366px;
+    }
+
 }

@@ -5,7 +5,12 @@
 @import url(../catalogue_of_paper/catalogue\ of\ paper-style.css);
 @import url(../footer/footer-styles.css);
 
-
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
 
 .row{
     display: flex;
@@ -16,4 +21,15 @@
 
 .row .catalogue-paper{
     margin-left: 30px;
+}
+
+
+@media only screen and (max-width: 1366px){
+    .row {
+        display: block;
+    }
+
+    .row .catalogue-paper{
+        margin-top: 30px;
+    }
 }

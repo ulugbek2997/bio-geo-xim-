@@ -10,12 +10,14 @@
 
 .row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .row1{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
 }
@@ -26,3 +28,31 @@
 .row1 .catalogue-paper{
     margin-right: 30px;
 }
+
+
+@media only screen and (max-width: 1366px){
+
+    .row1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .row1 .catalogue-paper{
+        margin-top: 1em;
+    }
+}
+
+
+@media only screen and (min-width: 1366px){
+    .row1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .row1 .paperBaner{
+        margin-right: 30px;
+    }
+}
+

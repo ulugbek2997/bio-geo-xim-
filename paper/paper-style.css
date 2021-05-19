@@ -71,3 +71,35 @@ margin-left: 1em;
 .paper-footer li :hover{
     color: var(--main-color);
 }
+
+@media only screen and (max-width: 1366px){
+    .paper{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    
+    .paper{
+        height: max-content;
+        padding-bottom: 1em;
+    }
+    
+    .paper-img{
+     display: none;
+    }
+    .paper-footer{
+        display: block;
+        width: 100%;
+    }
+    .paper-footer ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .paper-text , .paper-footer{
+        position: 0;
+    }
+}

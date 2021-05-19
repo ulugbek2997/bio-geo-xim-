@@ -1,5 +1,4 @@
 
-
 .catalogue-paper{
     background: #EBEBEB;
 width: 410px;
@@ -11,6 +10,19 @@ border-top: solid  #2680EB 5px;
 .catalogue-paper-title,.catalogue-paper-text{
     margin: 1em 0 1em 2em;
 }
+
+.catalogue-paper-text{
+    height: 51px;
+    overflow: hidden;
+}
+
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+  }
+
 
 .catalogue-paper-text,.paper-text-date{
     width: 80%;

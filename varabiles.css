@@ -22,3 +22,7 @@
   a{
       color: black;
   }
+
+  main, footer{
+      display: block;
+  }
