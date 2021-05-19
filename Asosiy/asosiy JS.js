@@ -1,7 +1,6 @@
-// import {fetch, randomNumber,getCardInfo,createCard} from '../js functions/mainJS.js';
-
-// fetch();
 let newsArr = [];
+
+const imgesURl= 'http://192.144.37.95/images/';
 
 
 fetch('http://192.144.37.95:8080/api/articles?langId=1')
@@ -36,7 +35,9 @@ function getCardInfo(apiMainId,getApi){
    let cardTitle = getApi[apiMainId]["title"];
    let cardBody = getApi[apiMainId]['body'];
    let cardMainCategoriy = getApi[apiMainId]['category']['name'];
+   let cardImgURl = getApi[apiMainId]['image']; 
    
+
 
    let date = new Date(getApi[apiMainId]['date']);
    let day = date.getDay();
@@ -45,18 +46,22 @@ function getCardInfo(apiMainId,getApi){
 
    let cardMainDate = day +'.'+month+'.'+year;
 
-    createCard(cardTitle,cardBody,cardMainCategoriy,cardMainDate)
+    createCard(cardTitle,cardBody,cardMainCategoriy,cardMainDate,cardImgURl)
 }
 
 
- function createCard(cardTitle,cardBody,cardMainCategoriy,cardMainDate){
+ function createCard(cardTitle,cardBody,cardMainCategoriy,cardMainDate,cardImgURl){
     
   let card= document.createElement('div');
   card.classList.add('card')
 
   let cardImg =document.createElement('div');
   cardImg.classList.add('card-img');
-  
+
+  let cardImgMain=document.createElement('img');
+  cardImgMain.src= imgesURl+cardImgURl;
+  cardImg.append(cardImgMain);
+
   let category= document.createElement('p');
   category.classList.add('nameCategoriy');
   category.innerText= cardMainCategoriy;
