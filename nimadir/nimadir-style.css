@@ -4,14 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    color: var(--main-color);
+    font-size: x-large;
     margin: 1em 0 1em 0; 
 }
 
-.moreContentBtn a{
-    color: var(--main-color);
-    font-size: x-large;
-}
 
 .moreContentBtn i{
     margin-left: 1em;

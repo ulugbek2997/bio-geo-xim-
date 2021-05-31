@@ -47,7 +47,10 @@ function creatPaper(item1,item2){
     authorImgLi.append(authorImg);
     const authorNameLi=document.createElement('li');
     authorNameLi.classList.add('author-name')
-    authorNameLi.innerText=newObject['author']['name'];
+    const authorNameLink=document.createElement('a')
+    authorNameLink.href="../Muallif/index.html?"+`authorID=${newObject['author']['id']}`;
+    authorNameLink.innerText=newObject['author']['name'];
+    authorNameLi.append(authorNameLink);
     authorUL.append(authorImgLi , authorNameLi);
 
 

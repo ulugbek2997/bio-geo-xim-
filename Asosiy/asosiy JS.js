@@ -1,3 +1,10 @@
+const bio=document.getElementById('bio');
+bio.href=`../Kategoriya/index.html?journalId=1`
+const geo=document.getElementById('geo');
+geo.href=`../Kategoriya/index.html?journalId=2`
+const kim=document.getElementById('kim');
+kim.href=`../Kategoriya/index.html?journalId=3`
+
 fetch('http://192.144.37.95:8080/api/articles?langId=1')
 .then((response) => {
   return response.json();
@@ -8,7 +15,7 @@ fetch('http://192.144.37.95:8080/api/articles?langId=1')
 
   for(i=0;i<3;i++){
    createCard(data,randomNumber(data['length']))
-   createOfPaper(data);
+   createOfPaper(data,i);
   }
 
   return data
@@ -54,13 +61,13 @@ fetch('http://192.144.37.95:8080/api/articles?langId=1')
   document.getElementById('cardsRow').append(card);
  }
 
-function createOfPaper(item1){
+function createOfPaper(item1,item2){
 
     let cataloguePaper = document.createElement('div');
     cataloguePaper.classList.add('catalogue-paper');
 
     let  allViewBtn=document.createElement('a');
-    allViewBtn.href='../Kategoriya/index.html';
+    allViewBtn.href='../Kategoriya/index.html?'+`journalId=${item2+1}`;
     allViewBtn.classList.add('allViewBtn')
     allViewBtn.innerText = "BARCHASI";
 
