@@ -1,0 +1,32 @@
+@import url(../varabiles.css);
+@import url(../componentsStyle/header.css);
+@import url(../componentsStyle/banner.css);
+@import url(../componentsStyle/card.css);
+@import url(../componentsStyle/shortNewsCard.css);
+@import url(../componentsStyle/footer.css);
+
+main{
+    margin-top: 30px;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.sections{
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .row{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+       width: 100%;
+    }
+}

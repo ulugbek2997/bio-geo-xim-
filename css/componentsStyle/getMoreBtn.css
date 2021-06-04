@@ -1,0 +1,16 @@
+@import url(../varabiles.css);
+
+.moreContentBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    font-size: x-large;
+    margin: 1em 0 1em 0; 
+    cursor: pointer;
+}
+
+
+.moreContentBtn i{
+    margin-left: 1em;
+}

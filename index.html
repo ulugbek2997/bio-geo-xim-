@@ -5,111 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asosiy</title>
-<link rel="stylesheet" href="./Asosiy/home page style.css">
+    <link rel="stylesheet" href="./css/pagesStyle/homePage.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-
 </head>
 <body>
-    
-    <header class="header-style">
-
-        <div class="header-main">
-            <section class="left">
-                <div class="left-title"> 
-                    <h3>Article</h3>
-                </div>
-                
-                <div id="leftSectionMain" class="left-main">
-                    <ul class="leftSectionUl">
-                        <li>
-                            <a href="">Biologiya</a>
-                        </li>
-                        <li>
-                            <a href="">Geografiya</a>
-                        </li>
-                        <li>
-                            <a href="">Kimyo</a>
-                        </li>
-                    </ul>
-                </div>
-        
-            </section>
-            <section id="rightSection" class="right">
-                <ul class="rightSectionUl">
-                    <li  class="language"><a id="uzbek" href="" >Uz</a></li>
-                    <li  class="slash">/</li>
-                    <li  class="language"><a id="russian" href="">Py</a></li>
-                    <li  class="language"><a id="english" href="">En</a></li>
-                    <li class="rectangle">|</li>
-                    <li class="telephoneNumber"> <a href="">71 288 46 54 (139)</a> </li>
-                </ul>
-        
+        <header class="header-style">
+            <div class="headerMain">
+                <section class="left">
+                    <div class="left-title"> 
+                        <h3>Article</h3>
+                    </div>
+                    <div id="leftSectionMain" class="left-main">
+                        <ul class="leftSectionUl">
+                            <li>
+                                <a  id="bio" href= "">Biologiya</a>
+                            </li>
+                            <li>
+                                <a id="geo" href="">Geografiya</a>
+                            </li>
+                            <li>
+                                <a id="kim" href="">Kimyo</a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
-               <div id="hamburgerBtn" class="hamburger">
-                <i class="ri-menu-line"></i>
-               </div>   
+                <section id="rightSection" class="right">
+                    <ul class="rightSectionUl">
+                        <li  class="language"><a id="uzbek" href="" >Uz</a></li>
+                        <li  class="slash">/</li>
+                        <li  class="language"><a id="russian" href="">Py</a></li>
+                        <li  class="language"><a id="english" href="">En</a></li>
+                        <li class="rectangle">|</li>
+                        <li class="telephoneNumber"> <a href="">71 288 46 54 (139)</a> </li>
+                    </ul>
+            
+                    </section>
+                   <div id="hamburgerBtn" class="hamburger">
+                    <i class="ri-menu-line"></i>
+                   </div>   
+                </div>
+        </header>
+
+    <main>
+    <!-- bio -->
+    <div id="bioSection" class="sections">
+        <div class="baner">
+            <img src="./media/photo/Group 11.png" alt="">
         </div>
-       
-    </header>
-
-<main id="main" >
-
-<!-- baners -->
-<div class="row">
-    <div class="baner">
-
-        <img src="../photo/Group 11.png" alt="">
-    
     </div>
-
-    <div class="baner">
-
-        <img src="../photo/Group 12.png" alt="">
-    
+    <!-- geo -->
+    <div id="geoSection" class="sections">
+        <div class="baner">
+            <img src="./media/photo/Group 12.png" alt="">
+        </div>
     </div>
-
-    <div class="baner">
-
-        <img src="../photo/Group 10.png" alt="">
-    
+    <!-- kim -->
+    <div id="kimSection" class="sections">
+        <div class="baner">
+            <img src="./media/photo/Group 10.png" alt="">
+        </div>
     </div>
-</div>
+    </main>
 
-<!-- cards -->
+    <footer id="footer">
+        <div class="footer-main">
+            <h3 class="footer-title">ARTICLE.COM</h3>
+            <ul class="categoriy">
+                <li><a id="footerBioLink" href="">Biologiya</a></li>
+                <li><a id="footerGeoLink" href="">Geografiya</a></li>
+                <li><a id="footerKimLink" href="">Kimyo</a></li>
+            </ul>
+            <ul class="social-page-links">
+                <li><a href=""><i class="ri-instagram-line"></i></a></li>
+                <li><a href=""><i class="ri-twitter-fill"></i></a></li>
+                <li><a href=""><i class="ri-facebook-fill"></i></a></li>
+            </ul>
+      </footer>
 
-<div id="cardsRow" class="row">
-</div>
-
-
- <!-- papers -->
-
- <div id="papersRow" class="row">
-
- </div>
-
-
-</main>
-
-<!-- footer -->
-
-<footer id="footer">
-    <div class="footer-main">
-        <h3 class="footer-title">ARTICLE.COM</h3>
-        <ul class="categoriy">
-            <li><a href="">Biologiya</a></li>
-            <li><a href="">Geografiya</a></li>
-            <li><a href="">Kimyo</a></li>
-        </ul>
-        <ul class="social-page-links">
-            <li><a href=""><i class="ri-instagram-line"></i></a></li>
-            <li><a href=""><i class="ri-twitter-fill"></i></a></li>
-            <li><a href=""><i class="ri-facebook-fill"></i></a></li>
-        </ul>
-  </footer>
-
-
-<script src="./header/header-JS.js"></script>
-<script src="./Asosiy/asosiy JS.js"></script>
 </body>
+<script type="module" src="./js/companents/headerJS.js"></script>
+<script type="module" src="./js/pagesJs/homePage.js"></script>
 </html>
